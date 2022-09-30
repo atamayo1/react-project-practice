@@ -17,8 +17,8 @@ const AjaxComponent = () => {
   const handleGetUsersAjaxAW = () => {
     setTimeout(async () => {
       try {
-        const peticion = await fetch("https://reqres.in/api/users?page=2");
-        const { data } = await peticion.json();
+        const request = await fetch("https://reqres.in/api/users?page=2");
+        const { data } = await request.json();
         setUsers(data);
         setLoading(false)
       } catch (err) {
@@ -29,7 +29,7 @@ const AjaxComponent = () => {
   };
 
   useEffect(() => {
-    //handleGetUsersAjaxPms();
+    // handleGetUsersAjaxPms();
     handleGetUsersAjaxAW();
   }, []);
 

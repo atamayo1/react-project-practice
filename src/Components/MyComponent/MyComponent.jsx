@@ -16,10 +16,13 @@ const MyComponent = ({ name }) => {
       <p>
         <input
           type="text"
+          className="form-control"
           placeholder="cambia el nombre"
           onChange={(e) => handleChangeName(e, e.target.value)}
-        />{" "}
-        <button onClick={(e) => handleChangeName(e, name)}>
+        />
+      </p>
+      <p>
+      <button className="btn btn-light" onClick={(e) => handleChangeName(e, name)}>
           Cambiar a nombre inicial
         </button>
       </p>

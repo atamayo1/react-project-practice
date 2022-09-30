@@ -24,10 +24,10 @@ const SecondComponent = ({ actualYear }) => {
       <h2>Second Component (Exercise)</h2>
       <LabelReturn>{newYear}</LabelReturn>
       <p>
-        <button onClick={handleNextYear}>Siguiente</button>{" "}
-        <button onClick={handlePrevYear}>Anterior</button>
+        <button className="btn btn-light" onClick={handleNextYear}>Siguiente</button>{" "}
+        <button className="btn btn-light" onClick={handlePrevYear}>Anterior</button>
       </p>
-      <p>Cambiar año: <input type="number" placeholder="cambiar el año" onChange={handleChangeYear} /></p>
+      <p>Cambiar año: <input type="number" className="form-control" placeholder="cambiar el año" onChange={handleChangeYear} /></p>
     </div>
   );
 };
